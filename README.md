@@ -2,17 +2,20 @@
 
 Docker image that converts a collection of pngs to mp4
 
-Volumes:
+## Volumes:
+
 Directory with pngs:
 - /in
+
 Output directory:
 - /out
 
-Environment variables:
+## Environment variables:
+
 Output filename without (.mp4)
 - VIDEONAME
 
-Example run command:
+## Example run command:
 
 ```shell
 docker container run --rm -d -v $(pwd)/pngs:/in -v $(pwd)/result:/out -e VIDEONAME="pngs-as-mp4" presidenten/ffmpeg-pngs-to-mp4:4.0
