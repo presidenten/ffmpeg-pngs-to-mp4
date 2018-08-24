@@ -18,5 +18,5 @@ Output filename without (.mp4)
 ## Example run command:
 
 ```shell
-docker container run --rm -d -v $(pwd)/pngs:/in -v $(pwd)/result:/out -e VIDEONAME="pngs-as-mp4" presidenten/ffmpeg-pngs-to-mp4:4.0
+docker container run --rm -d -v $(pwd)/pngs:/in -v $(pwd)/result:/out -e VIDEONAME="pngs-as-mp4" presidenten/ffmpeg-pngs-to-mp4:1.0.0-ffmpeg4.0
 ```
