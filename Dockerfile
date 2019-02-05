@@ -1,7 +1,7 @@
 FROM jrottenberg/ffmpeg:4.0-alpine
 
 ENV VIDEONAME testcase
-ENV SLOWDOWN 10
+ENV SLOWDOWN 2
 VOLUME [ "/in", "/out" ]
 
 WORKDIR /in
